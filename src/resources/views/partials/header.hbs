@@ -1,0 +1,113 @@
+<div class="header">
+  <div class="grid">
+    <div class="header-content">
+      <div class="header-logo">
+        <a href="/">
+          <img class="logo-img" src="/img/logo.png" alt="">
+        </a>
+      </div>
+      <form class="header-search" action="/search">
+        <div class="input-group form-group">
+          <input type="text" name="q" class="form-control rounded search-input" placeholder="Tìm kiếm tên sản phẩm" />
+          <button type="submit" class="btn btn-outline-primary search-button"><i class="ti-search"></i></button>
+        </div>
+      </form>
+      <div class="header-cart header-cart-list_no-cart">  <!--header-cart-list_no-cart//header-cart-list_have-cart -->
+          <i class="header-cart-icon ti-shopping-cart"></i>
+          <span class="header-cart-notice"></span>
+          <div class="header-cart-list">
+            <img src="/img/empty-cart.png" class="empty-cart-img" alt="">
+            <h4 class="hader-cart-heading">Sản phẩm đã thêm</h4>
+            <ul class="header-cart-list-item">
+              <!-- 
+              <li class="header-cart-item header-cart-item-STT">
+                <img src="" alt="" class="header-cart-img">
+                <div class="header-cart-item-info">
+                  <div class="header-cart-item-head">
+                    <h5 class="header-cart-item-name">Module USB PCM2704</h5>
+                    <div class="header-cart-item-price-wrap">
+                      <span class="header-cart-item-price">230.000đ</span>
+                      <span class="n_dis header-cart-item-sTT">5</span>
+                    </div>
+                  </div>
+                  <div class="header-cart-item-body">
+                    <span class="header-cart-item-type">Phân loại: module</span>
+                    <span class="header-cart-item-remove" onclick="removeFromCart('STT')">Xóa</span>
+                  </div>
+                </div>
+              </li>
+              --> 
+            </ul>
+            <div class="grid total-price-wrap">
+              <span style="color: red;">Tổng tiền: </span>
+              <span class="cart-total-price" style="color: red;">300.000đ</span>
+            </div>
+            <a href="/pay">
+            <button class="btn btn-primary btn-dat-hang" >Đặt hàng</button>
+            </a>
+          </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--Nav-->
+<div class="nav-bar-wrap">
+    <div class="grid">
+      <ul id="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">TRANG CHỦ</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gioi-thieu">GIỚI THIỆU</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            DANH MỤC SẢN PHẨM
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a href="/module" class="dropdown-item"><i class="ti-angle-right"></i> Module</a>
+            </li>
+            <li>
+              <a href="/dongho" class="dropdown-item"><i class="ti-angle-right"></i> Đồng hồ đo lường</a>
+            </li>
+            <li>
+              <a href="/matcd" class="dropdown-item"><i class="ti-angle-right"></i> Mắt CD-Phụ kiện đầu CD</a>
+            </li>
+            <li>
+              <a href="/phantan" class="dropdown-item"><i class="ti-angle-right"></i> Phân tần</a>
+            </li>
+            <li>
+              <a href="/transistors" class="dropdown-item"><i class="ti-angle-right"></i> Transistors</a>
+            </li>
+            <li>
+              <a href="/mosfets" class="dropdown-item"><i class="ti-angle-right"></i> Mosfets</a>
+            </li>
+            <li>
+              <a href="/tudien" class="dropdown-item"><i class="ti-angle-right"></i> Tụ điện</a>
+            </li>
+            <li>
+              <a href="/dientro" class="dropdown-item"><i class="ti-angle-right"></i> Điện trở</a>
+            </li>
+            <li>
+              <a href="/diode" class="dropdown-item"><i class="ti-angle-right"></i> Diode</a>
+            </li>
+            <li>
+              <a href="/jfet" class="dropdown-item"><i class="ti-angle-right"></i> Jfet</a>
+            </li>
+            <li>
+              <a href="/igbt" class="dropdown-item"><i class="ti-angle-right"></i> IGBT</a>
+            </li>
+          </ul></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/huong-dan">HƯỚNG DẪN</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dat-mua-linh-kien">ĐẶT MUA LINH KIỆN HIẾM</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/dat-mach-in">ĐẶT MẠCH IN</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="/thiet-ke-mach-in">THIẾT KẾ MẠCH IN</a></li>
+      </ul>
+    </div>
+</div>
+<script src="/myJS.js"></script>
+

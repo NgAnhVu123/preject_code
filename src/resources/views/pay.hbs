@@ -1,0 +1,26 @@
+<div class="mt-4 pay-wrap">
+    <h1>Thông tin thanh toán</h1>
+    <form class="mt-4" method="POST" action="/store">
+        <div class="mb-3">
+            <label for="name" class="form-label">Tên khách hàng</label>
+            <input type="text" class="form-control" id="name" name="name">
+        </div>
+        <div class="mb-3">
+            <label for="sdt" class="form-label">Số điện thoại</label>
+            <input type="text" class="form-control" id="sdt" name="sdt" >
+        </div>
+        <div class="mb-3">
+            <label for="adress" class="form-label">Địa chỉ</label>
+            <input type="text" class="form-control" id="adress" name="adress">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="mb-3 n_dis">
+            <label for="idproduct" class="form-label">Danh sách sản phẩm</label>
+            <input type="text" class="form-control" value="{{varu}}" id="idproduct" name="idproduct">
+        </div>
+        <button type="submit" class="btn btn-primary">Đặt hàng</button>
+    </form>
+</div>

@@ -1,0 +1,34 @@
+<!--
+<h1>{{component.name}}</h1>
+
+<img src="{{component.img}}" alt="">
+
+<p>{{component.price}}</p>
+-->
+<div class="show">
+    <div class="grid">
+        <div class="grid-row">
+            <div class="grid-column-5 ">
+                <div class="show-img" style="background-image: url({{component.img}});"></div>
+            </div>
+            <div class="grid-column-7">
+                <h1 class="show-name">{{component.name}}</h1>
+                <h3 class="show-price">Giá: {{component.price}}</h3>
+                <div class="show-help">- Tư vấn bán hàng : 0919960389<br>- Hỗ trợ kĩ thuật : 0978136717</div>
+                <p class="show-type">Loại: {{component.type}} </p>
+                <!--
+                -->
+                <button class="show-cart-btn" >
+                    <i class="ti-shopping-cart"></i> Mua hàng
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    if(!{{component.exist}}) {
+        shbtn=document.querySelector('.show-cart-btn');
+        shbtn.outerHTML='<button class="show-cart-btn-no"><i class="ti-na"></i>  Hết hàng</button>';
+    }
+</script>
+
